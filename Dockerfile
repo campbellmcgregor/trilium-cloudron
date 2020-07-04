@@ -6,9 +6,9 @@ ENV VERSION="0.43.1"
 
 WORKDIR /app/code
 
-RUN wget https://github.com/zadam/trilium/releases/download/v0.43.1/trilium-linux-x64-server-0.43.1.tar.xz && \
-    tar -xvf trilium-linux-x64-server-0.43.1.tar.xz && \
-    rm -f trilium-linux-x64-server-0.43.1.tar.xz
+RUN git clone -b stable https://github.com/zadam/trilium.git .
+
+RUN npm install --production
 
 RUN mkdir -p /app/pkg && \
     chown cloudron:cloudron /app/code -R
