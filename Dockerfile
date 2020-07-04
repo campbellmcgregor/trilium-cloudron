@@ -10,8 +10,9 @@ RUN wget https://github.com/zadam/trilium/releases/download/v0.43.1/trilium-linu
     tar -xvf trilium-linux-x64-server-0.43.1.tar.xz && \
     rm -f trilium-linux-x64-server-0.43.1.tar.xz
 
-RUN mkdir -p /app/pkg && \
-    chown cloudron:cloudron /app/code -R
+RUN mkdir -p /app/pkg 
+    #chown cloudron:cloudron /app/code -R
+
 
 COPY start.sh /app/pkg
 

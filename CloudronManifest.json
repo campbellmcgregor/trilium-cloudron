@@ -2,7 +2,7 @@
   "id": "com.cloudron.trilium",
   "version": "0.1.0",
   "healthCheckPath": "/",
-  "httpPort": 3000,
+  "httpPort": 8080,
   "addons": {
     "localstorage": {}
   },
