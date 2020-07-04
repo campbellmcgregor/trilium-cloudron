@@ -1,10 +1,11 @@
 {
   "id": "com.cloudron.trilium",
   "version": "0.1.0",
-  "healthCheckPath": "/",
+  "healthCheckPath": "/api/sync/stats",
   "httpPort": 8080,
   "addons": {
     "localstorage": {}
   },
-  "manifestVersion": 2
+  "manifestVersion": 2,
+  "icon": "file://icon.png"
 }

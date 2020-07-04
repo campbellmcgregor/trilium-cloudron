@@ -2,7 +2,6 @@
 
 set -eu
 
-ln -s /home/cloudron /app/data
 
 cd /app/code/trilium-linux-x64-server
 
